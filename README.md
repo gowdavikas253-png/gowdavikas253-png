@@ -18,4 +18,7 @@
 ## Currently Learning
 - Penetration Testing
 - CVE exploitation
-- Working towards eJPT → OSCP
+
+## Projects
+- [Metasploitable2 Pentest](https://github.com/gowdavikas253-png/metasploitable2-pentest) 
+  — Exploitation writeups on deliberately vulnerable VM
