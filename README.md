@@ -1,39 +1,24 @@
-# Hi, I'm Vikas 👋
+name: Generate Snake
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
-## About Me
-
-I'm a second-year B.Sc. IT student from Mumbai, India, with a strong interest in offensive security and penetration testing.
-
-My goal is to build a solid foundation in web application security, network penetration testing, and exploit development through hands-on practice, documentation, and continuous learning.
-
-## Areas of Interest
-
-* Web Application Security
-* Penetration Testing
-* Red Teaming
-* Bug Bounty
-* Exploit Development
-
-## Skills
-
-* Linux
-* Networking Fundamentals
-* Nmap
-* Burp Suite
-* HTTP & Web Technologies
-* Basic Python
-* Git & GitHub
-
-## Lab Environment
-
-* Kali Linux
-* VMware Workstation
-* DVWA
-* Metasploitable2
-* PortSwigger Web Security Academy
-
-## Featured Projects
-
-* **Metasploitable2 Pentest** – Penetration testing and exploitation of the Metasploitable2 virtual machine.
-* **Burp Suite Pentesting Labs** – Documentation of Burp Suite practice, DVWA exercises, and PortSwigger Web Security Academy labs.
-
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
