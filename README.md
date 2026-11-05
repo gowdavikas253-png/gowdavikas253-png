@@ -38,8 +38,8 @@
 
 <h3>GitHub Activity</h3>
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=gowdavikas253-png&show_icons=true&hide_border=true&bg_color=04040A&title_color=00F7FF&icon_color=EB142D&text_color=E8FFFF&ring_color=00F7FF" alt="GitHub Stats"/>
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gowdavikas253-png&layout=compact&hide_border=true&bg_color=04040A&title_color=00F7FF&text_color=E8FFFF" alt="Top Languages"/>
+<img height="180" src="https://github-readme-stats.shion.dev/api?username=gowdavikas253-png&show_icons=true&hide_border=true&bg_color=04040A&title_color=00F7FF&icon_color=EB142D&text_color=E8FFFF&ring_color=00F7FF" alt="GitHub Stats"/>
+<img height="180" src="https://github-readme-stats.shion.dev/api/top-langs/?username=gowdavikas253-png&layout=compact&hide_border=true&bg_color=04040A&title_color=00F7FF&text_color=E8FFFF" alt="Top Languages"/>
 
 <img src="./assests/divider.svg" width="100%" alt=""/>
 
